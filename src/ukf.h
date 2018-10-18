@@ -69,6 +69,18 @@ public:
   
   //set measurement dimension, radar can measure r, phi, and r_dot
   int n_z;  
+  
+  // initializing matrices
+  MatrixXd R_Laser;
+  MatrixXd H_;
+  
+  //add measurement noise covariance matrix
+  MatrixXd R_Radar;
+  
+  //Initiallizing NIS variables.
+  
+  double NIS_radar_;
+  double NIS_laser_;
 
   /**
    * Constructor
